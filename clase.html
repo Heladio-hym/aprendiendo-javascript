@@ -1,0 +1,31 @@
+<<!DOCTYPE html>
+<html>
+<head>
+
+	<script type="text/javascript">
+		
+		function Persona(primerNombre) {
+  this.primerNombre = primerNombre;
+}
+
+Persona.prototype.diHola = function() {
+  alert ("Hola, Soy " + this.primerNombre);
+};
+
+var persona1 = new Persona("Heladio");
+var persona2 = new Persona("Angel");
+var funcionSaludar = persona1.diHola;
+
+persona1.diHola();                            // muestra "Hola, Soy Heladio"
+persona2.diHola();                            // muestra "Hola, Soy Angel"
+
+	</script>
+	
+	<title>clase</title>
+</head>
+<body>
+
+	
+
+</body>
+</html>
